@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    a {
+        margin: 10px;
+    }
+    
+    img {
+        object-fit: cover;
+        width: 200px;
+        height: 200px;
+        animation-duration: 1s;
+        
+        :hover {
+            width: 210px;
+            height: 210px;
+        }
+    }
+}
