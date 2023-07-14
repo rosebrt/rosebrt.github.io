@@ -13,7 +13,7 @@
   height: 200px;
   animation-duration: 1s;
 }
-.container img :hover {
+.container img:hover {
   width: 210px;
   height: 210px;
 }
