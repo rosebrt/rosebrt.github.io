@@ -1,17 +1,51 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My Website</title>
+    <title>Thomas Rosebrough</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type="image/x-icon" href="Content/logo.ico">
+    <script src="https://web3forms.com/client/script.js" async defer></script>
+    <!--Wave effect adapted from https://codepen.io/goodkatz/pen/LYPGxQz with permission-->
 </head>
 <body>
-    <div class="Header"></div>
-    <div class="container">
-        <a href="page1.html"><img src="Content/1.jpg" alt="Image 1"></a>
-        <a href="page1.html"><img src="Content/1.png" alt="Image 2"></a>
-        <a href="page2.html"><img src="Content/2.png" alt="Image 3"></a>
-        <a href="page3.html"><img src="Content/3.png" alt="Image 4"></a>
-        <a href="page4.html"><img src="Content/4.png" alt="Image 5"></a>
+    <div class="header"><a id="dark-mode-btn" href="">Dark Mode</a> | <a href="">New Style</a> | <a href="">Contact</a></div>
+    <div id="title-main"><span id="logo">▝▟ </span> Thomas Rosebrough </div>
+    <div id="subtitle-main">Developer | Game Designer | Sysadmin | Musician | Electrical Engineer | Artist | Writer</div>
+    <img id="photo-main" src="Content/me and howie.png" alt="Me and Howie">
+    <div class="link-container">
+        <a href=""><img src="Content/1.jpg" alt="Image 1"></a>
+        <a href=""><img src="Content/1.png" alt="Image 2"></a>
+        <a href=""><img src="Content/2.png" alt="Image 3"></a>
+        <a href=""><img src="Content/3.png" alt="Image 4"></a>
+        <a href=""><img src="Content/4.png" alt="Image 5"></a>
+    </div>
+    <!--Waves Container-->
+    <div>
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+            <defs>
+            <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+            </defs>
+            <g class="parallax">
+                <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+                <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+                <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+                <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+            </g>
+        </svg>
+    </div>
+    <!--Waves end-->
+    <div class="form-container">
+        <form action="https://api.web3forms.com/submit" method="POST">
+
+            <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+        
+            <input type="text" name="name" required>
+            <input type="email" name="email" required>
+            <textarea name="message" required></textarea>
+            <button type="submit">Submit Form</button>
+        
+        </form>
     </div>
 </body>
 </html>
